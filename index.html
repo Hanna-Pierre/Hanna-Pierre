@@ -1,158 +1,153 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Save the Date – Hanna & Pierre</title>
-  <meta name="description" content="Hanna & Pierre trouwen op 27 augustus 2027 in Kasteel van Kapellen.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --ivory: #f7f5f0;
-      --ink: #2b3f80;      /* blauw van de kasteeltekening */
-      --sage: #7a9577;     /* groen van de salon */
-      --gold: #b8924a;
-      --orange: #e0852f;   /* oranje voor titel en tekstregels */
-      --text: #3a3f55;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Save the Date | Hanna &amp; Pierre</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #2c2c2c;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
 
-    body {
-      background: var(--ivory);
-      color: var(--text);
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.25rem;
-      line-height: 1.6;
-      text-align: center;
-    }
+        /* Toont de VOLLEDIGE tekening/foto zonder afsnijden */
+        .hero-img {
+            width: 92%;
+            max-width: 750px;     /* Zorgt voor een mooie compacte verhouding */
+            height: auto;         /* Behoudt 100% van de originele afbeelding */
+            display: block;
+            margin: 25px auto 0 auto;
+        }
 
-    /* Banner: het hele kasteel zichtbaar */
-    .banner img {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-      margin: 0 auto;
-    }
+        .wrapper {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px 20px 50px 20px;
+        }
 
-    /* Tekstblok */
-    .invite {
-      max-width: 44rem;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem 3.5rem;
-    }
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #1b365d;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
 
-    .save {
-      font-family: "Pinyon Script", cursive;
-      font-weight: 400;            /* geen vet: voorkomt de "dikke" look */
-      font-size: clamp(2.6rem, 8vw, 4.4rem);
-      line-height: 1.1;
-      color: var(--orange);
-    }
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5em;
+            color: #1b365d;
+            margin: 5px 0 10px 0;
+            font-weight: normal;
+            line-height: 1.1;
+        }
 
-    .names {
-      font-family: "Pinyon Script", cursive;
-      font-weight: 400;
-      font-size: clamp(3.2rem, 12vw, 6.5rem);
-      line-height: 1.2;
-      color: var(--ink);
-      margin: 1.2rem 0 1.5rem;
-    }
+        .divider {
+            margin: 15px auto 25px auto;
+            color: #1b365d;
+            font-size: 0.9em;
+        }
 
-    .divider {
-      width: 6rem;
-      height: 1px;
-      background: var(--gold);
-      margin: 0 auto 1.5rem;
-    }
+        .date-container {
+            margin: 30px 0 40px 0;
+            padding: 0;
+        }
 
-    .date {
-      font-size: clamp(1.6rem, 5vw, 2.2rem);
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: var(--ink);
-    }
+        .date-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2em;
+            font-style: italic;
+            font-weight: 600;
+            color: #1b365d;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
 
-    .place {
-      font-style: italic;
-      font-size: clamp(1.3rem, 4vw, 1.7rem);
-      margin-top: 0.3rem;
-    }
+        .location-label {
+            font-size: 0.85em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #1b365d;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
 
-    .more {
-      margin-top: 2rem;
-      font-size: 1.15rem;
-      color: var(--orange);
-    }
+        .location-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #2c2c2c;
+            margin: 0 0 35px 0;
+            font-weight: 400;
+        }
 
-    /* Foto */
-    .photos {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 2rem;
-      max-width: 62rem;
-      margin: 0 auto;
-      padding: 0 1.5rem 4rem;
-    }
+        /* Sfeerfoto met boog-vorm */
+        .arch-img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 175px 175px 12px 12px;
+            border: 2px solid #1b365d;
+            display: block;
+            margin: 10px auto 30px auto;
+        }
 
-    .arch {
-      position: relative;
-      padding: 8px;
-      border: 1px solid var(--gold);
-      border-radius: 999px 999px 0 0;   /* boogvorm */
-    }
-
-    .arch img {
-      display: block;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 999px 999px 0 0;
-    }
-
-    .arch.big { width: min(26rem, 100%); }
-    .arch.big img { aspect-ratio: 3 / 4.2; }
-
-    footer {
-      padding: 0 1.5rem 3rem;
-      font-family: "Pinyon Script", cursive;
-      font-size: 2rem;
-      color: var(--orange);
-    }
-
-    @media (max-width: 600px) {
-      .photos { padding-bottom: 3rem; }
-    }
-  </style>
+        .footer-note {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #555555;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <header class="banner">
-    <img src="kasteel.jpeg" alt="Tekening van Kasteel van Kapellen">
-  </header>
+    <!-- Aangepaste banner foto bovenaan -->
+    <img src="kasteel2.jpeg" alt="Kasteel van Kapellen" class="hero-img">
 
-  <main>
-    <section class="invite">
-      <h1 class="save">Save the Date</h1>
-      <p class="names">Hanna &amp; Pierre</p>
-      <div class="divider"></div>
-      <p class="date">27 augustus 2027</p>
-      <p class="place">Kasteel van Kapellen</p>
-      <p class="more">Een formele uitnodiging volgt later.</p>
-    </section>
+    <div class="wrapper">
+        <div class="subtitle">Save the Date</div>
+        <h1 class="names">Hanna &amp; Pierre</h1>
 
-    <section class="photos">
-      <div class="arch big">
-        <img src="interieur.webp" alt="Feestzaal met kristallen luchters in Kasteel van Kapellen" loading="lazy">
-      </div>
-    </section>
-  </main>
+        <div class="divider">✨</div>
 
-  <footer>Wij hopen jullie daar te zien!</footer>
+        <div class="date-container">
+            <div class="date-text">27 augustus 2027</div>
+        </div>
+
+        <div>
+            <span class="location-label">Locatie</span>
+            <h2 class="location-title">Kasteel van Kapellen</h2>
+        </div>
+
+        <!-- Aangepaste sfeerfoto onderaan -->
+        <img src="IMG_4305.jpeg" alt="Sfeerbeeld Kasteel van Kapellen" class="arch-img">
+
+        <p class="footer-note">
+            Wij gaan trouwen!<br>
+            De officiële uitnodiging met alle details volgt later.
+        </p>
+    </div>
 
 </body>
 </html>
