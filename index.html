@@ -11,53 +11,93 @@
             text-align: center;
             background-color: #fdfcfafc;
             color: #333;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Stijl voor de kasteelfoto bovenaan */
+        .hero-image {
+            width: 100%;
+            height: 45vh; /* Neemt 45% van de schermhoogte in */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 4px solid #b8905b;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 90vh;
-            margin: 0;
         }
+
         h1 {
             font-size: 3.5em;
             color: #b8905b;
             margin-bottom: 5px;
-            margin-top: 5px;
+            margin-top: 10px;
+            font-weight: normal;
         }
+
         p {
             font-size: 1.2em;
             line-height: 1.6;
+            margin-bottom: 10px;
         }
+
         .date-box {
             font-size: 1.5em;
-            font-weight: bold;
-            margin: 30px 0;
+            margin: 20px auto 40px;
             padding: 15px 40px;
             border: 2px solid #b8905b;
             border-radius: 8px;
             display: inline-block;
             background-color: white;
+            color: #333;
+            font-weight: bold;
         }
+
+        /* Stijl voor de interieurfoto met een chique boog-vorm */
+        .interior-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 200px 200px 10px 10px; /* Creëert het boog-effect */
+            margin-top: 20px;
+            border: 2px solid #e0d5c1;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
         .footer-text {
             font-style: italic;
-            color: #666;
-            margin-top: 40px;
+            color: #777;
+            margin-top: 50px;
+            padding-bottom: 40px;
         }
     </style>
 </head>
 <body>
 
-    <p>Wij gaan trouwen!</p>
-    <h1>Hanna & Pierre</h1>
+    <!-- De foto van het kasteel als grote banner bovenaan -->
+    <img src="kasteel.jpg" alt="Kasteel Starrenhof" class="hero-image">
 
-    <div class="date-box">
-        Zaterdag 12 Juni 2027
+    <div class="content">
+        <p>Wij gaan trouwen!</p>
+        <h1>Hanna & Pierre</h1>
+
+        <div class="date-box">
+            Vrijdag 27 augustus 2027
+        </div>
+
+        <p>Locatie: Antwerpen</p>
+        
+        <!-- De sfeerfoto van de zaal -->
+        <img src="interieur.webp" alt="Sfeerbeeld Diner" class="interior-image">
+
+        <p class="footer-text">Save the date! <br>De officiële uitnodiging met alle details volgt later.</p>
     </div>
-
-    <p>Locatie: Antwerpen</p>
-    
-    <p class="footer-text">Save the date! <br>De officiële uitnodiging met alle details volgt later.</p>
 
 </body>
 </html>
