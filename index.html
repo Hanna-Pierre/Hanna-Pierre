@@ -25,20 +25,20 @@
             text-align: center;
         }
 
-        /* Vult 100% van de schermbreedte van rand tot rand zonder uitrekken */
+        /* Toont de hele schets zonder afsnijden */
         .hero-img {
             width: 100%;
-            height: 380px;
-            object-fit: cover;
-            object-position: center;
+            max-width: 850px; /* Zorgt dat de tekening op grote schermen niet té groot wordt */
+            height: auto;     /* Behoudt de originele verhoudingen: niets wordt afgesneden */
             display: block;
-            border-bottom: 2px solid #1b365d;
+            margin: 20px auto 0 auto;
+            padding: 0 15px;  /* Nette marges aan de zijkanten op mobiel */
         }
 
         .wrapper {
             max-width: 650px;
             margin: 0 auto;
-            padding: 30px 20px 50px 20px;
+            padding: 20px 20px 50px 20px;
         }
 
         .subtitle {
