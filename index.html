@@ -13,10 +13,9 @@
     
     <style>
         :root {
-            --aperol-orange: #f26522; /* De echte Aperol Spritz oranje kleur */
-            --aperol-soft: rgba(242, 101, 34, 0.08);
-            --text-dark: #2b2b2b;
-            --bg-color: #faf6f0;
+            --accent-color: #b8905b; /* Chique warm goud */
+            --text-dark: #2c2c2c;
+            --bg-color: #ffffff; /* Strak wit */
         }
 
         html, body {
@@ -37,7 +36,7 @@
             object-fit: cover;
             object-position: center;
             display: block;
-            border-bottom: 4px solid var(--aperol-orange);
+            border-bottom: 3px solid var(--accent-color);
         }
 
         /* Inhoudscontainer */
@@ -52,7 +51,7 @@
             font-size: 1.1em;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: var(--aperol-orange);
+            color: var(--accent-color);
             margin-top: 15px;
             margin-bottom: 5px;
             font-weight: 600;
@@ -61,7 +60,7 @@
         .names {
             font-family: 'Great Vibes', cursive;
             font-size: 5em;
-            color: var(--aperol-orange);
+            color: var(--accent-color);
             margin: 5px 0 10px;
             font-weight: normal;
             line-height: 1.1;
@@ -73,39 +72,37 @@
             justify-content: center;
             gap: 15px;
             margin: 15px auto 25px;
-            color: var(--aperol-orange);
+            color: var(--accent-color);
             font-size: 0.9em;
         }
 
         .line {
             height: 1px;
             width: 70px;
-            background-color: var(--aperol-orange);
+            background-color: var(--accent-color);
         }
 
-        /* Vernieuwde, feestelijke datum-sectie */
+        /* Vrije datum zonder kader */
         .date-container {
-            margin: 25px 0 35px;
-            padding: 18px 20px;
-            border-top: 1px solid var(--aperol-orange);
-            border-bottom: 1px solid var(--aperol-orange);
-            background-color: var(--aperol-soft);
+            margin: 30px 0 40px;
+            padding: 0;
         }
 
         .date-text {
             font-family: 'Playfair Display', serif;
-            font-size: 2.4em;
+            font-size: 3.2em; /* Extra groot formaat */
             font-style: italic;
             font-weight: 600;
             color: var(--text-dark);
             letter-spacing: 1px;
+            line-height: 1.2;
         }
 
         .location-label {
             font-size: 0.85em;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--aperol-orange);
+            color: var(--accent-color);
             display: block;
             margin-bottom: 5px;
             font-weight: 600;
@@ -115,20 +112,20 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.8em;
             color: var(--text-dark);
-            margin: 0 0 30px;
+            margin: 0 0 35px;
             font-weight: 400;
         }
 
-        /* Sfeerfoto boog-vorm met Aperol accent */
+        /* Sfeerfoto boog-vorm */
         .arch-img {
             width: 100%;
             max-width: 350px;
             height: auto;
             border-radius: 175px 175px 12px 12px;
-            border: 3px solid var(--aperol-orange);
+            border: 3px solid var(--accent-color);
             display: block;
             margin: 10px auto 30px;
-            box-shadow: 0 10px 25px rgba(242, 101, 34, 0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         }
 
         .footer-note {
@@ -151,7 +148,7 @@
 
         <div class="divider">
             <span class="line"></span>
-            <span>🍹</span>
+            <span>✨</span>
             <span class="line"></span>
         </div>
 
