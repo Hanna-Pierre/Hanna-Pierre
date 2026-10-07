@@ -25,11 +25,11 @@
             text-align: center;
         }
 
-        /* Toont de VOLLEDIGE tekening zonder afsnijden van toren of tuin */
+        /* Toont de VOLLEDIGE tekening bovenaan */
         .hero-img {
             width: 92%;
-            max-width: 750px;     /* Zorgt voor een mooie compacte verhouding */
-            height: auto;         /* Behoudt 100% van de originele afbeelding */
+            max-width: 750px;
+            height: auto;
             display: block;
             margin: 25px auto 0 auto;
         }
@@ -45,29 +45,32 @@
             font-size: 1.1em;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: #1b365d;
+            color: #1b365d; /* Klassiek blauw */
             margin-top: 15px;
             margin-bottom: 5px;
             font-weight: 600;
         }
 
+        /* De namen met een "punchy" Aperol-oranje kleur */
         .names {
             font-family: 'Great Vibes', cursive;
             font-size: 5em;
-            color: #1b365d;
+            color: #f26522; /* Lekker knallend oranje! */
             margin: 5px 0 10px 0;
             font-weight: normal;
             line-height: 1.1;
         }
 
+        /* Strak lijntje in plaats van het sterretje */
         .divider {
-            margin: 15px auto 25px auto;
-            color: #1b365d;
-            font-size: 0.9em;
+            width: 60px;
+            height: 2px;
+            background-color: #1b365d;
+            margin: 15px auto 30px auto;
         }
 
         .date-container {
-            margin: 30px 0 40px 0;
+            margin: 0 0 40px 0;
             padding: 0;
         }
 
@@ -99,6 +102,7 @@
             font-weight: 400;
         }
 
+        /* Sfeerfoto met boog-vorm */
         .arch-img {
             width: 100%;
             max-width: 350px;
@@ -121,13 +125,17 @@
 </head>
 <body>
 
-    <img src="kasteel.jpeg" alt="Kasteel van Kapellen Schets" class="hero-img">
+    <!-- Kasteel 3 foto -->
+    <img src="kasteel3.jpeg" alt="Kasteel van Kapellen Schets" class="hero-img">
 
     <div class="wrapper">
         <div class="subtitle">Save the Date</div>
+        
+        <!-- Namen in het oranje -->
         <h1 class="names">Hanna &amp; Pierre</h1>
 
-        <div class="divider">✨</div>
+        <!-- Het sterretje is vervangen door het strakke lijntje (.divider) -->
+        <div class="divider"></div>
 
         <div class="date-container">
             <div class="date-text">27 augustus 2027</div>
@@ -138,7 +146,7 @@
             <h2 class="location-title">Kasteel van Kapellen</h2>
         </div>
 
-        <!-- Aangepaste tweede foto -->
+        <!-- De tweede foto onderaan -->
         <img src="hannaenpierre.jpeg" alt="Hanna &amp; Pierre" class="arch-img">
 
         <p class="footer-note">
