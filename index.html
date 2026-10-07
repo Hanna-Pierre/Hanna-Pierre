@@ -16,22 +16,32 @@
             box-sizing: border-box;
         }
 
+        :root {
+            /* Nieuwe warme kleuren passend bij de oranje schets */
+            --primary-color: #a84322; /* Warme roest/terracotta voor namen en datum */
+            --accent-color: #e26d43;  /* Lichter oranje voor details zoals de lijn en subtitel */
+            --text-dark: #3b332f;     /* Donker warmgrijs/bruin voor de rest van de tekst */
+            --bg-color: #fffdfa;      /* Een héél zacht warme witte achtergrond */
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #2c2c2c;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
             font-family: 'Montserrat', sans-serif;
             text-align: center;
         }
 
-        /* Toont de VOLLEDIGE tekening/foto zonder afsnijden */
+        /* Banner foto */
         .hero-img {
             width: 92%;
-            max-width: 750px;     /* Zorgt voor een mooie compacte verhouding */
-            height: auto;         /* Behoudt 100% van de originele afbeelding */
+            max-width: 750px;
+            height: auto;
             display: block;
             margin: 25px auto 0 auto;
+            /* Lichte oranje rand onder de foto om het af te werken */
+            border-bottom: 2px solid var(--accent-color);
         }
 
         .wrapper {
@@ -45,7 +55,7 @@
             font-size: 1.1em;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: #1b365d;
+            color: var(--accent-color);
             margin-top: 15px;
             margin-bottom: 5px;
             font-weight: 600;
@@ -54,7 +64,7 @@
         .names {
             font-family: 'Great Vibes', cursive;
             font-size: 5em;
-            color: #1b365d;
+            color: var(--primary-color);
             margin: 5px 0 10px 0;
             font-weight: normal;
             line-height: 1.1;
@@ -62,7 +72,7 @@
 
         .divider {
             margin: 15px auto 25px auto;
-            color: #1b365d;
+            color: var(--accent-color);
             font-size: 0.9em;
         }
 
@@ -76,7 +86,7 @@
             font-size: 3.2em;
             font-style: italic;
             font-weight: 600;
-            color: #1b365d;
+            color: var(--primary-color);
             letter-spacing: 1px;
             line-height: 1.2;
         }
@@ -85,7 +95,7 @@
             font-size: 0.85em;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #1b365d;
+            color: var(--accent-color);
             display: block;
             margin-bottom: 5px;
             font-weight: 600;
@@ -94,7 +104,7 @@
         .location-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.8em;
-            color: #2c2c2c;
+            color: var(--text-dark);
             margin: 0 0 35px 0;
             font-weight: 400;
         }
@@ -105,7 +115,7 @@
             max-width: 350px;
             height: auto;
             border-radius: 175px 175px 12px 12px;
-            border: 2px solid #1b365d;
+            border: 2px solid var(--accent-color);
             display: block;
             margin: 10px auto 30px auto;
         }
@@ -114,7 +124,7 @@
             font-family: 'Playfair Display', serif;
             font-style: italic;
             font-size: 1.2em;
-            color: #555555;
+            color: #6b5c55;
             line-height: 1.6;
             margin-top: 20px;
         }
@@ -122,7 +132,7 @@
 </head>
 <body>
 
-    <!-- Aangepaste banner foto bovenaan -->
+    <!-- Kasteel banner -->
     <img src="kasteel2.jpeg" alt="Kasteel van Kapellen" class="hero-img">
 
     <div class="wrapper">
@@ -140,8 +150,8 @@
             <h2 class="location-title">Kasteel van Kapellen</h2>
         </div>
 
-        <!-- Aangepaste sfeerfoto onderaan -->
-        <img src="IMG_4305.jpeg" alt="Sfeerbeeld Kasteel van Kapellen" class="arch-img">
+        <!-- Sfeerfoto met nieuwe bestandsnaam -->
+        <img src="hannaenpierre.jpeg" alt="Hanna en Pierre" class="arch-img">
 
         <p class="footer-note">
             Wij gaan trouwen!<br>
