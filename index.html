@@ -25,14 +25,13 @@
             text-align: center;
         }
 
-        /* Banner van rand tot rand die lucht & tuin automatisch afsnijdt */
+        /* Toont de VOLLEDIGE tekening zonder afsnijden van toren of tuin */
         .hero-img {
-            width: 100%;
-            height: clamp(220px, 35vh, 340px); /* Strakke banner-hoogte voor mobiel en desktop */
-            object-fit: cover;                 /* Snijdt overbodige boven- en onderkant af */
-            object-position: center 45%;        /* Houdt de focus op het kasteel */
+            width: 92%;
+            max-width: 750px;     /* Zorgt voor een mooie compacte verhouding */
+            height: auto;         /* Behoudt 100% van de originele afbeelding */
             display: block;
-            border-bottom: 2px solid #1b365d;
+            margin: 25px auto 0 auto;
         }
 
         .wrapper {
@@ -47,7 +46,7 @@
             letter-spacing: 4px;
             text-transform: uppercase;
             color: #1b365d;
-            margin-top: 20px;
+            margin-top: 15px;
             margin-bottom: 5px;
             font-weight: 600;
         }
